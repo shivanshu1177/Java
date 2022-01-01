@@ -21,5 +21,5 @@ public class MenuDriven {
            input = sc.nextInt();
       
        } while(input == 1);
-   }   1
+   }   
 }
