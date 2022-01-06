@@ -19,3 +19,4 @@ public class QueRTwo {
     
 }
 //this was an verbel problem this profgram only takes arry input 
+//uncomplete
