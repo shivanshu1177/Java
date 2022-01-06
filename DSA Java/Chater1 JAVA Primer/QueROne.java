@@ -9,6 +9,7 @@ public class QueROne {
         System.out.println("Integer: ");
 
         int a = sc.nextInt();
+        //to scan string
 
         sc.nextLine();
 
@@ -20,7 +21,7 @@ public class QueROne {
 
         float c = sc.nextFloat();
 
-        // print 
+        // print here
 
         System.out.println(a);
 
