@@ -1,24 +1,27 @@
 import java.io.*;
-import java.util.*;
-import java.text.*;
 import java.math.*;
-import java.util.regex.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+
+
 
 public class Solution {
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String month = in.next();
-        String day = in.next();
-        String year = in.next();
-        String input_date = day + "/" + month + "/" + year;
-        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
-        try 
-        {
-            DateFormat format2 = new SimpleDateFormat("EEEE"); 
-            String final_day = format2.format(format1.parse(input_date));
-            System.out.println(final_day.toUpperCase());
+        Scanner sc= new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n % 2 != 0){
+            System.out.println("Weird");
         }
-        catch(Exception e){}
+        else if(n % 2 == 0 && n>=2 && n<5){
+            System.out.println("Not Weird");
+        }
+        else if(n % 2 == 0 && n>=6 && n<=20){
+            System.out.println("Weird");
+        }
+        else if(n % 2 == 0 && n<20){
+            System.out.println("Not Weird");
+        }
     }
 }
