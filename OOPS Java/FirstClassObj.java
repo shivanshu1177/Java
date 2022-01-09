@@ -9,7 +9,7 @@ class Person{
     //1. DAta
     //2. Methods
     void speak(){
-        System.out.println("Hello");
+        System.out.println("my name is " + name + " and my age is " + age);
     }
 }
 
@@ -20,7 +20,6 @@ public class FirstClassObj {
         person1.age  = 10;
         person1.speak();
 
-        System.out.println(person1.name);
         
     }
 }
